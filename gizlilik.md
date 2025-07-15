@@ -1,23 +1,66 @@
-Satırım Bilirsin – Gizlilik Politikası
-Son güncelleme: 16 Temmuz 2025
-Giriş
-Satırım Bilirsin (“Eklenti”),  Araç Kiralama yönetim panelindeki satışları yerel olarak kaydetmek ve ödemesiz satışlar için hatırlatma göndermek amacıyla tasarlanmıştır. Bu politika, kullanıcı verilerinin nasıl işlendiğini açıklar.
-Toplanan Veriler
-Eklenti hiçbir kişisel veriyi geliştiriciye, üçüncü taraflara ya da haricî bir sunucuya göndermemektedir.
-Yerel olarak saklanan veriler:
-• Müşteri adı, telefon numarası, rezervasyon tutarı ve rezervasyon URL’si
-• Ödeme durumu ve hatırlatma zamanı
-Bu bilgiler yalnızca sizin tarayıcınızın chrome.storage.local alanında tutulur ve tarayıcınızdan dışarı çıkmaz.
-İzinlerin Kullanımı
-• activeTab – Sadece açık olan obilet.com rezervasyon sayfasından satış bilgilerini okumak için kullanılır.
-• storage – Satış kayıtlarını ve ayarları tarayıcı içinde saklamak için kullanılır.
-• alarms – Ödemesiz satışlar için hatırlatma zamanlayıcıları kurmak üzere kullanılır.
-• notifications – Hatırlatma süresi dolduğunda masaüstü bildirimi göstermek için kullanılır.
-• Ana makine izni https://admin.obilet.com/* – Eklentinin yalnızca ilgili admin sayfalarında çalışmasını sağlar.
-Üçüncü Taraf Hizmetleri
-Eklenti hiçbir üçüncü taraf hizmete bağlanmaz ve reklam göstermez.
-Verilerin Silinmesi
-Tarayıcı geçmişinizi temizlediğinizde veya eklentiyi kaldırdığınızda tüm satış verileri kalıcı olarak silinir. Eklenti içindeki “Temizle” seçeneği de verileri siler.
-Güvenlik
-Veriler, Chrome’un sağladığı yerel depolama alanında tutulduğu için haricî erişime kapalıdır. Geliştirici, verilerin korunması için güvenlik güncellemelerini düzenli olarak uygular.
-İletişim
+# Gizlilik Politikası  
+_Son güncelleme: 16 Temmuz 2025_
+
+Bu belge, **Satırım Bilirsin** adlı Chrome uzantısının (bundan sonra **“Uzantı”** olarak anılacaktır) kullanıcı verilerini nasıl işlediğini açıklar. Uzantı yalnızca satış takibi ve ödeme hatırlatma işlevlerini yerine getirmek amacıyla tasarlanmıştır.
+
+---
+
+## 1. Toplanan ve İşlenen Veriler
+
+Uzantı, satış işlemi sırasında tarayıcı sekmesinde görüntülenen şu bilgileri **yalnızca yerel olarak** depolar:
+
+| Veri | Amaç |
+| ---- | ---- |
+| Müşteri adı & soyadı | Satış kaydının görüntülenmesi |
+| Telefon numarası | Hızlı arama ve hatırlatma bildirimlerinde gösterim |
+| Satış tutarı | Raporlama ve toplam tutar hesaplama |
+| Rezervasyon bağlantısı | Kayıtlara tekrar erişim |
+| Ödeme durumu, hatırlatma zamanı | Tahsilat takibi |
+
+Bu veriler **tarayıcı dışına aktarılmaz**, geliştiriciye veya üçüncü taraflara gönderilmez.
+
+---
+
+## 2. İzinlerin Kullanımı
+
+| Chrome İzni | Neden Gereklidir? |
+|-------------|-------------------|
+| `activeTab` | Açık sekmedeki satış bilgilerinin okunabilmesi |
+| `storage` | Kayıtların ve kullanıcı ayarlarının tarayıcıda saklanması |
+| `alarms` | Ödemesiz satışlar için zamanlı hatırlatma kurma |
+| `notifications` | Hatırlatma süresi dolduğunda masaüstü bildirimi gösterme |
+| Alan izni (yasak olmayan belirli admin URL’leri) | Uzantının yalnızca ilgili yönetim sayfalarında çalışmasını sağlama |
+
+Uzantı başka hiçbir izin talep etmez ve reklam göstermez.
+
+---
+
+## 3. Veri Paylaşımı / Üçüncü Taraflar
+
+– Geliştirici, toplanan verileri satmaz, kiralamaz ve üçüncü taraflarla paylaşmaz.  
+– Uzantı, haricî sunucularla iletişim kurmaz ve uzaktan kod çalıştırmaz.
+
+---
+
+## 4. Veri Saklama ve Silme
+
+1. **Manuel Silme**  
+   • Uzantı popup’ındaki **“Temizle”** düğmesi, tüm satış kayıtlarını anında siler.  
+2. **Uzantıyı Kaldırma**  
+   • Uzantıyı Chrome’dan kaldırdığınızda tüm yerel veriler otomatik olarak silinir.  
+3. **Tarayıcı Verilerini Temizleme**  
+   • Chrome’un “Tarama verilerini temizle” seçeneğiyle yerel verileri silebilirsiniz.
+
+---
+
+## 5. Güvenlik
+
+Veriler, Google Chrome’un sağladığı `chrome.storage.local` alanında saklanır ve tarayıcı dışından erişilemez. Geliştirici, uzantıyı düzenli olarak gözden geçirerek güvenlik güncellemeleri uygular.
+
+---
+
+## 6. Politika Değişiklikleri
+
+Bu gizlilik politikasında yapılacak önemli değişiklikler, belge başındaki “Son güncelleme” tarihinin değiştirilmesiyle duyurulur. Uzantıyı kullanmaya devam etmeniz, güncellenen politikayı kabul ettiğiniz anlamına gelir.
+
+---
